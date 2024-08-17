@@ -7,9 +7,8 @@ import backgroundImage from '../assets/images/bg.png';
 import nextImage from '../assets/images/next.png';
 
 const MainPage = () => {
-  return (
-    
-      <>
+  return (    
+      <>      
       <div className="flex justify-end mb-4 sm:mb-6">
         <button className="flex items-center bg-[#F88725] rounded-full px-4 py-2.5 gap-1">
           <span className="text-white text-sm sm:text-base md:text-xl">Инвентарь</span>
@@ -65,7 +64,9 @@ const MainPage = () => {
 
         </div>
       </div>
+      
       </>
+          
   );
 }
 
