@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${rubik.className} h-screen overflow-hidden`}>{children}</body>
+      <body className={`${rubik.className} h-screen w-screen overflow-hidden select-none`}>{children}</body>
     </html>
   );
 }
