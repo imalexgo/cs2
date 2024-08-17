@@ -10,7 +10,7 @@ import nextImage from '../app/assets/images/next.png';
 
 export default function Home() {
   return (
-  <main className='bg-[#212328] min-h-screen w-screen flex flex-col justify-between p-5 sm:p-6'>
+  <main className='bg-[#212328] h-full overflow-y-auto w-screen flex flex-col justify-between p-5 sm:p-6'>
         
     {/* Верхний блок */}
     <div className="flex justify-end mb-4 sm:mb-6">
