@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import inventaryImage from '../assets/images/inventary.png';
 import avatarImage from '../assets/images/avatar.png';
-import ratingImage from '../assets/images/rating.png';
+import ratingImage from '../assets/images/userRating.png';
 import friendsImage from '../assets/images/friends.png';
 import backgroundImage from '../assets/images/bg.png';
 import nextImage from '../assets/images/next.png';
@@ -12,7 +12,7 @@ const MainPage = () => {
   return (    
       <>      
       <div className="flex justify-between mb-4 sm:mb-6">
-        <Image src={infoImage} alt="Информация" className='w-6 h-6 mt-2 opacity-80'/>
+        <Image src={infoImage} alt="Информация" className='w-6 h-6 mt-1 opacity-80'/>
         <button className="flex items-center bg-[#F88725] rounded-full px-4 py-2.5 gap-1 opacity-80">
           <span className="text-white text-sm sm:text-base md:text-xl">Инвентарь</span>
           <Image src={inventaryImage} alt="Инвентарь" className="w-6 sm:w-8 md:w-10" />
@@ -26,7 +26,7 @@ const MainPage = () => {
             <Image src={avatarImage} alt="Аватар" />
           </div>
           <div className="w-10/12 border-t border-white my-4"></div>
-          <div className="w-11/12">
+          <div className="w-10/12">
             <Image src={ratingImage} alt="Рейтинг" />
           </div>
         </div>
