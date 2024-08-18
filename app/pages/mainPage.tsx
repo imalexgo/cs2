@@ -1,16 +1,19 @@
 import Image from 'next/image';
+
 import inventaryImage from '../assets/images/inventary.png';
 import avatarImage from '../assets/images/avatar.png';
 import ratingImage from '../assets/images/rating.png';
 import friendsImage from '../assets/images/friends.png';
 import backgroundImage from '../assets/images/bg.png';
 import nextImage from '../assets/images/next.png';
+import infoImage from '../assets/images/info.png';
 
 const MainPage = () => {
   return (    
       <>      
-      <div className="flex justify-end mb-4 sm:mb-6">
-        <button className="flex items-center bg-[#F88725] rounded-full px-4 py-2.5 gap-1">
+      <div className="flex justify-between mb-4 sm:mb-6">
+        <Image src={infoImage} alt="Информация" className='w-6 h-6 mt-2 opacity-80'/>
+        <button className="flex items-center bg-[#F88725] rounded-full px-4 py-2.5 gap-1 opacity-80">
           <span className="text-white text-sm sm:text-base md:text-xl">Инвентарь</span>
           <Image src={inventaryImage} alt="Инвентарь" className="w-6 sm:w-8 md:w-10" />
         </button>
@@ -18,7 +21,7 @@ const MainPage = () => {
 
       <div className="flex flex-col items-center justify-center w-full gap-3">
         <div className="text-white text-xl md:text-4xl font-medium">Валя Камбековна</div>
-        <div className="bg-[#151720] p-5 w-2/5 rounded-xl flex flex-col items-center gap-1">
+        <div className="bg-[#151720] p-5 v-xs:w-2/5 xs:w-3/5  rounded-xl flex flex-col items-center gap-1">
           <div className="w-full">
             <Image src={avatarImage} alt="Аватар" />
           </div>
@@ -51,7 +54,7 @@ const MainPage = () => {
             ></div>
           </div>
 
-          <div className="w-5/12 bg-[#151720] p-4 rounded-xl flex flex-col items-center gap-1">
+          <div className="flex justify-center w-5/12 bg-[#151720] p-4 rounded-xl flex flex-col items-center gap-1">
             <div className="flex flex-row">
               <Image src={friendsImage} alt="Друзья" className="w-10 z-30 " />
               <Image src={friendsImage} alt="Друзья" className="w-10 z-20 -ml-4" />
