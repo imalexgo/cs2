@@ -1,10 +1,10 @@
 'use client'
 
-import TasksPage from '@/app/pages/tasksPage';
+import FriendsPage from '@/app/pages/friendsPage';
 
 export default function Home() {
     return (
-      <TasksPage />
+      <FriendsPage />
     );
   }
   

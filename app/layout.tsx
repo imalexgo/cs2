@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${rubik.className} h-screen w-screen overflow-hidden select-none`}>{children}</body>
+      <body className={`${rubik.className} h-screen w-screen overflow-hidden select-none`}>
+        <main className="bg-[#212328] h-full overflow-y-auto flex flex-col justify-between px-5 pt-6 pb-12 sm:p-6">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
