@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import inventaryImage from '../assets/images/inventary.png';
 import avatarImage from '../assets/images/avatar.png';
@@ -36,7 +37,9 @@ const MainPage = () => {
         <div className="text-white font-medium text-4xl mb-4">8 324 Elo</div>
         <button className="w-full bg-[#F88725] text-white py-4 px-4 rounded-full font-medium text-2xl mb-3">Играть</button>
         <div className="flex flex-row w-full gap-3">
-          <div className="w-7/12 md:w-8/12 bg-[#151720] p-4 md:p-6 rounded-xl flex flex-col relative overflow-hidden gap-1">
+          
+          <Link href="/tasks" className="w-7/12 md:w-8/12 bg-[#151720] p-4 md:p-6 rounded-xl flex flex-col relative overflow-hidden gap-1">
+          {/* <div className="w-7/12 md:w-8/12 bg-[#151720] p-4 md:p-6 rounded-xl flex flex-col relative overflow-hidden gap-1"> */}
             <div className="flex flex-row gap-2 md:gap-4">
               <span className="text-white font-regular text-2xl md:text-4xl">Задания</span>
               <Image src={nextImage} alt="Задания" className="w-5 h-5 mt-1.5" />
@@ -52,7 +55,8 @@ const MainPage = () => {
                 transform: 'translateX(80px)',
               }}
             ></div>
-          </div>
+          {/* </div> */}
+          </Link>
 
           <div className="flex justify-center w-5/12 bg-[#151720] p-4 rounded-xl flex flex-col items-center gap-1">
             <div className="flex flex-row">
